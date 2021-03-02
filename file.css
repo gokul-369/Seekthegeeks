@@ -207,10 +207,12 @@ section {
 }
 
 .services {
-  background-color: aquamarine;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -223,11 +225,12 @@ section {
 }
 
 .con {
-  width: 250px;
-  height: 280px;
+  margin-top: 60px;
+  width: 200px;
+  height: 240px;
   background-color: white;
-  -webkit-box-shadow: 10px 10px 10px 10px #e6e6e6;
-          box-shadow: 10px 10px 10px 10px #e6e6e6;
+  -webkit-box-shadow: 10px 10px 10px 10px #dadada;
+          box-shadow: 10px 10px 10px 10px #dadada;
   border-radius: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +247,20 @@ section {
           justify-content: center;
 }
 
-.prologos {
+.servlink:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.testimonials {
+  width: 90%;
+  height: 250px;
+  background-color: blue;
+}
+
+.servlogos {
   height: 200px;
   width: 150px;
 }
@@ -287,26 +303,15 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 230px;
-  height: 250px;
-  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
   color: #2f2e41;
   -webkit-box-shadow: 10px 10px 10px 10px #e6e6e6;
           box-shadow: 10px 10px 10px 10px #e6e6e6;
 }
 
-.c1:hover {
-  background-color: #a7a6be;
-}
-
 .contlinks:hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
-  -webkit-transition: all 1.3s;
-  transition: all 1.3s;
-}
-
-.servlink:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-transition: all 0.7s;
