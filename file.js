@@ -29,4 +29,3 @@ window.onscroll = function () {
     nav.classList.remove("navcolorchange");
   }
 };
-
