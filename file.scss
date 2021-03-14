@@ -110,7 +110,7 @@ section {
   color: rgb(255, 255, 255);
   text-shadow: 2px black;
 }
-.homecontent button {
+.homecontent button,button.feedback  {
   padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
@@ -122,10 +122,11 @@ section {
   font-weight: 600;
   margin-top: 30px;
 }
-.homecontent button:hover {
+.homecontent button:hover{
   color: #1aa260;
   background: white;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .About {
   // background-color: rgb(231, 228, 228);
@@ -202,11 +203,11 @@ section {
   background-color: rgb(241, 241, 241);
   color: #2f2e41;
   border-radius: 10px;
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   margin: 0 1.5rem;
   // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
   //             0 1px 3px rgba(0, 0, 0, 0.24),
-  box-shadow: 5px 5px 5px 5px #e6e3e3;
+  box-shadow: 6px 6px 6px 6px #e6e3e3;
 }
 .avatar {
   border-radius: 100%;
@@ -244,9 +245,16 @@ section {
   height: 200px;
   width: 150px;
 }
-.Contact {
+.contactbox {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 
   a {
@@ -269,6 +277,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+  background-color: #ffffff;
   color: #2f2e41;
   box-shadow: 10px 10px 10px 10px rgb(230, 230, 230);
 }
@@ -276,7 +285,12 @@ section {
   transform: scale(1.1, 1.1);
   transition: all 0.7s;
 }
-
+button.feedback:hover{
+  color: white;
+  background: #2f2e41;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   nav {
     display: block;
@@ -420,6 +434,11 @@ section {
     display: none;
   }
   .Contact {
+    // align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contactbox {
     // align-items: center;
     flex-direction: row;
     flex-wrap: wrap;

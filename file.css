@@ -154,7 +154,7 @@ section {
   text-shadow: 2px black;
 }
 
-.homecontent button {
+.homecontent button, button.feedback {
   padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
@@ -172,6 +172,7 @@ section {
   background: white;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .About {
@@ -275,10 +276,10 @@ section {
   background-color: #f1f1f1;
   color: #2f2e41;
   border-radius: 10px;
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   margin: 0 1.5rem;
-  -webkit-box-shadow: 5px 5px 5px 5px #e6e3e3;
-          box-shadow: 5px 5px 5px 5px #e6e3e3;
+  -webkit-box-shadow: 6px 6px 6px 6px #e6e3e3;
+          box-shadow: 6px 6px 6px 6px #e6e3e3;
 }
 
 .avatar {
@@ -323,12 +324,29 @@ section {
   width: 150px;
 }
 
-.Contact {
+.contactbox {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -364,6 +382,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 100%;
+  background-color: #ffffff;
   color: #2f2e41;
   -webkit-box-shadow: 10px 10px 10px 10px #e6e6e6;
           box-shadow: 10px 10px 10px 10px #e6e6e6;
@@ -374,6 +393,14 @@ section {
           transform: scale(1.1, 1.1);
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+}
+
+button.feedback:hover {
+  color: white;
+  background: #2f2e41;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -537,6 +564,14 @@ section {
     display: none;
   }
   .Contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactbox {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

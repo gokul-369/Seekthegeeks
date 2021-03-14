@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 /* login styes */
-*{
-  margin:0px;
+* {
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: sans-serif;
 }
 
@@ -81,7 +81,7 @@ input:focus {
   outline: none;
 }
 .logbtn:hover {
-  background-color:#1aa260;
+  background-color: #3b3b5ae8;
 }
 .logimg {
   height: 50%;

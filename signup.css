@@ -16,7 +16,8 @@ body {
   height: 44px;
   line-height: 44px;
 }
-h1,h4{
+h1,
+h4 {
   margin: 25px;
   color: rgb(29, 58, 82);
 }
@@ -103,7 +104,7 @@ button {
   top: -20px;
 }
 button:hover {
-  background-color: #1aa260;
+  background-color: #3b3b5ae8;
 }
 img {
   height: 50%;
@@ -112,12 +113,12 @@ img {
   left: 0;
   bottom: 0;
 }
-.presentuser{
-position: relative;
-top:360px;
+.presentuser {
+  position: relative;
+  top: 360px;
 }
-a{
-  color:#1aa260;
+a {
+  color: #1aa260;
   text-decoration: none;
 }
 @media screen and (max-width: 700px) {
@@ -133,17 +134,17 @@ a{
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
-  a{
+  a {
     position: relative;
-    top:-270px;
+    top: -270px;
   }
-  h1{
+  h1 {
     position: relative;
     top: -230px;
   }
-  h4{
+  h4 {
     position: relative;
-    top:-250px;
+    top: -250px;
   }
   form {
     position: relative;
