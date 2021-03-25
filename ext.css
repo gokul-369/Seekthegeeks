@@ -17,9 +17,9 @@
 .cards {
   height: 160px;
   width: 900px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 250, 250);
   border-radius: 30px;
-  box-shadow: 10px 10px 10px 10px rgb(238, 237, 237);
+  box-shadow: 10px 10px 10px 10px rgb(224, 224, 224);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -41,7 +41,7 @@ p {
 }
 .content {
   width: 600px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 250, 250);
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ p {
   justify-content: space-evenly;
   height: 30px;
   width: 300px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(252, 250, 250);
 }
 button {
   background-color: #1aa260;
@@ -74,7 +74,7 @@ h4 {
 {
   p{
     max-width: 300px;
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
   }
   body{
