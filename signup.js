@@ -16,10 +16,10 @@ function toggle_eye() {
     state = false;
   } else {
     password.setAttribute("type", "text");
-    cpassword.setAttribute("type", "text");
     eye.style.color = "#32be8f";
     eye2.style.color = "#32be8f";
     state = true;
+    cpassword.setAttribute("type", "text");
   }
 }
 
