@@ -2,10 +2,8 @@
 * {
   padding: 0px;
   margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -15,46 +13,30 @@ body {
   background-color: white;
   overflow-x: hidden;
 }
-
 nav {
   background-color: #1aa26000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 8vh;
   width: 100%;
   position: fixed;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   z-index: 1;
 }
-
 .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
   margin-left: auto;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   overflow-y: hidden;
 }
-
 .nav-links li {
   list-style: none;
 }
-
 .nav-links li a {
   display: inline-block;
   text-decoration: none;
@@ -69,13 +51,10 @@ nav {
   width: 0;
   height: 2px;
   background: white;
-  -webkit-transition: width 0.4s;
   transition: width 0.4s;
 }
-
 .coollink:hover::after {
   width: 100%;
-  -webkit-transition: width 0.4s;
   transition: width 0.4s;
 }
 
@@ -86,55 +65,33 @@ nav {
   font-size: 20px;
   font-family: "Pacifico", cursive;
 }
-
 .logo a {
   text-decoration: none;
 }
-
 .navcolorchange {
   background-color: #2f2e41;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 section {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .Home {
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.288)), to(rgba(0, 0, 0, 0.288))), url("img/Homeback.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), url("img/Homeback.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)),
+    url("img/Homeback.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .homecontent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .homecontent h1 {
   font-size: 50px;
   font-family: "Cinzel", serif;
@@ -146,11 +103,10 @@ section {
   text-align: center;
   margin-top: 25px;
   line-height: 1.3;
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 2px black;
 }
-
-.homecontent button, button.feedback {
+.homecontent button,button.feedback  {
   padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
@@ -162,32 +118,26 @@ section {
   font-weight: 600;
   margin-top: 30px;
 }
-
-.homecontent button:hover {
+.homecontent button:hover{
   color: #1aa260;
   background: white;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   cursor: pointer;
 }
-
 .About {
   position: relative;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
-
 .aboutcontent {
   color: #2f2e41;
   position: absolute;
   bottom: 370px;
 }
-
 .aboutcontent h2 {
   font-size: 54px;
   font-family: "Kaushan Script", cursive;
   text-align: center;
 }
-
 .aboutcontent p {
   text-align: center;
   margin: 16px 100px 0 100px;
@@ -196,88 +146,58 @@ section {
   font-style: italic;
   font-family: "Alegreya Sans", sans-serif;
 }
-
 .About img {
   height: 300px;
   width: 300px;
   margin: 240px 50px 0 50px;
 }
-
 .services {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
+  flex-wrap: wrap;
+  justify-content: space-around;
 
-.services a {
+}
+a {
   text-decoration: none;
   text-align: center;
   color: #2f2e41;
   font-size: 15px;
 }
-
 .con {
   margin-top: 60px;
   width: 200px;
   height: 240px;
-  background-color: white;
-  -webkit-box-shadow: 10px 10px 10px 10px #dadada;
-          box-shadow: 10px 10px 10px 10px #dadada;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px 10px #dadada;
   border-radius: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .servlink:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  -webkit-transition: all 0.7s;
+  transform: translateY(-20px);
   transition: all 0.7s;
 }
-
 .testimonialcontainer {
   width: 95%;
   height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
-
 .testimonial {
   position: relative;
-  background-color: #f1f1f1;
+  background-color: rgb(241, 241, 241);
   color: #2f2e41;
   border-radius: 10px;
   padding: 2rem 2rem 2rem 2rem;
   margin: 0 1.5rem;
-  -webkit-box-shadow: 6px 6px 6px 6px #e6e3e3;
-          box-shadow: 6px 6px 6px 6px #e6e3e3;
+  box-shadow: 6px 6px 6px 6px #e6e3e3;
 }
-
 .avatar {
   border-radius: 100%;
   max-width: 4.3rem;
@@ -287,27 +207,22 @@ section {
   left: 0;
   right: 0;
   margin: 0 auto;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.24);
 }
-
 .testimonialuser {
   text-align: center;
   margin: 1.5rem 0 1rem 0;
 }
-
 .user__name {
   font-size: 1.15rem;
   margin-top: 0.5rem;
 }
-
 .user__org {
   color: #1aa260;
   margin-top: 0.4rem;
   font-size: 0.85rem;
   letter-spacing: 0.03rem;
 }
-
 .testimonialtext {
   text-align: center;
   font-weight: 300;
@@ -319,86 +234,51 @@ section {
   height: 200px;
   width: 150px;
 }
-
 .contactbox {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .Contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 
-.Contact a {
+}
+a {
   text-decoration: none;
 }
-
 .logos {
   height: 70px;
   width: 70px;
 }
-
 .labels {
   margin-top: 20px;
 }
-
 .c1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   border-radius: 100%;
   background-color: #ffffff;
   color: #2f2e41;
-  -webkit-box-shadow: 10px 10px 10px 10px #e6e6e6;
-          box-shadow: 10px 10px 10px 10px #e6e6e6;
+  box-shadow: 10px 10px 10px 10px rgb(230, 230, 230);
 }
-
 .contlinks:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  -webkit-transition: all 0.7s;
+  transform: scale(1.1, 1.1);
   transition: all 0.7s;
 }
-
-button.feedback:hover {
+button.feedback:hover{
   color: white;
   background: #2f2e41;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   cursor: pointer;
 }
-
 @media screen and (max-width: 768px) {
   nav {
     display: block;
@@ -413,13 +293,9 @@ button.feedback:hover {
     background-color: #1aa260;
     width: 100%;
     height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     clip-path: circle(100px at 100% -25%);
     -webkit-clip-path: circle(100px at 100% -25%);
-    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     pointer-events: none;
   }
@@ -429,6 +305,7 @@ button.feedback:hover {
   .nav-links li {
     opacity: 0;
   }
+
   .nav-links li a {
     font-size: 25px;
   }
@@ -441,7 +318,6 @@ button.feedback:hover {
     margin-left: 50px;
   }
   .burger div {
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .line1,
@@ -455,66 +331,58 @@ button.feedback:hover {
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
-    -webkit-transition: 0.8s ease-out;
     transition: 0.8s ease-out;
     pointer-events: all;
   }
   .toggle .line1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-            transform: rotate(-45deg) translate(-5px, 6px);
-    -webkit-transition: all 0.5s ease;
+    transform: rotate(-45deg) translate(-5px, 6px);
     transition: all 0.5s ease;
   }
   .toggle .line2 {
-    -webkit-transform: translateX(400%);
-            transform: translateX(400%);
-    -webkit-transition: all 0.5s ease;
+    transform: translateX(400%);
     transition: all 0.5s ease;
   }
   .toggle .line3 {
-    -webkit-transform: rotate(45deg) translate(-5px, -6px);
-            transform: rotate(45deg) translate(-5px, -6px);
-    -webkit-transition: all 0.5s ease;
+    transform: rotate(45deg) translate(-5px, -6px);
     transition: all 0.5s ease;
   }
   .nav-links li:nth-child(1) {
-    -webkit-transition: all 0.5s ease 0.2s;
     transition: all 0.5s ease 0.2s;
   }
   .nav-links li:nth-child(2) {
-    -webkit-transition: all 0.5s ease 0.4s;
     transition: all 0.5s ease 0.4s;
   }
   .nav-links li:nth-child(3) {
-    -webkit-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
   }
   .nav-links li:nth-child(4) {
-    -webkit-transition: all 0.5s ease 0.8s;
     transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 1s;
   }
   li.fade {
     opacity: 1;
   }
   section {
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .Home {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.288)), to(rgba(27, 27, 27, 0.425))), url("img/mount.jpeg");
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.288), rgba(27, 27, 27, 0.425)), url("img/mount.jpeg");
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.288),
+        rgba(27, 27, 27, 0.425)
+      ),
+      url("img/mount.jpeg");
     position: relative;
     background-size: cover;
     background-position: center;
   }
   .homecontent h1 {
-    text-align: center;
+    text-align: center ;
     font-size: 30px;
     margin-top: -50%;
   }
@@ -525,13 +393,8 @@ button.feedback:hover {
   }
   .About {
     height: 122vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: white;
   }
   .About img {
@@ -544,6 +407,7 @@ button.feedback:hover {
   .aboutcontent {
     margin-top: 20px;
   }
+
   .aboutcontent p {
     width: 90%;
     text-align: left;
@@ -560,22 +424,13 @@ button.feedback:hover {
     display: none;
   }
   .Contact {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .contactbox {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     height: 50vh;
     background-color: white;
@@ -586,15 +441,9 @@ button.feedback:hover {
     height: 150px;
   }
   .services {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
     height: 150%;
   }
   .con {
@@ -609,4 +458,3 @@ button.feedback:hover {
     margin-top: 20px;
   }
 }
-/*# sourceMappingURL=file.css.map */
