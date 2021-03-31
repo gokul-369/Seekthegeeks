@@ -105,13 +105,13 @@ if(!isset($_SESSION['uname'])){
     </section>
 
     <section data-scroll-section id="services" class="services">
-      <a class="servlink" href="webdev.php">
+      <a class="servlink" href="webdev.html">
         <div data-aos="fade-up" data-aos-duration="1000" class="con">
           <img class="servlogos" src="img/webdev.svg" />
           <h3>Web Devoloper</h3>
         </div>
       </a>
-      <a class="servlink" href="appdev.php">
+      <a class="servlink" href="appdev.html">
         <div
           class="con"
           data-aos="fade-up"
@@ -123,7 +123,7 @@ if(!isset($_SESSION['uname'])){
         </div>
       </a>
 
-      <a class="servlink" href="designer.php">
+      <a class="servlink" href="designer.html">
         <div
           class="con"
           data-aos="fade-up"
@@ -133,7 +133,7 @@ if(!isset($_SESSION['uname'])){
           <img class="servlogos" src="img/designers.svg" />
           <h3>Graphic Designer</h3>
         </div> </a
-      ><a class="servlink" href="sftdev.php">
+      ><a class="servlink" href="sftdev.html">
         <div
           class="con"
           data-aos="fade-up"
