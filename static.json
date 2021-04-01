@@ -4,7 +4,7 @@
   "https_only": true,
   "headers": {
     "/**": {
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
