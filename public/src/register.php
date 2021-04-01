@@ -20,7 +20,7 @@ if ($num == 1) {
 else {
     $reg="insert into customer (mail,username,password) values ('$mail','$name','$pass')";
     mysqli_query($con,$reg);
-    header('location:login.html');
+    header('location:../login.html');
 }
 }
 ?>
