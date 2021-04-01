@@ -15,7 +15,7 @@ $s="select * from customer where mail = '$mail'";
 $result = mysqli_query($con,$s);
 $num = mysqli_num_rows($result);
 if ($num == 1) {
-    echo'<script>alert("user already exists ")</script>';
+    echo'<script>alert("user already exists or your pawwsword is wrong")</script>';
 }
 else {
     $reg="insert into customer (mail,username,password) values ('$mail','$name','$pass')";
