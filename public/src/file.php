@@ -59,7 +59,7 @@ if(!isset($_SESSION['uname'])){
         </ul>
       </nav>
     </header>
-    <section data-scroll-section id="Home" class="Home">
+    <section  id="Home" class="Home">
       <div class="homecontent">
         <h1 data-aos="zoom-in-up" data-aos-duration="1000">
           One Stop solution For all your tech needs
@@ -76,7 +76,7 @@ if(!isset($_SESSION['uname'])){
         </a>
       </div>
     </section>
-    <section data-scroll-section id="About" class="About">
+    <section  id="About" class="About">
       <div class="aboutcontent">
         <h2 data-aos="fade-up" data-aos-duration="1300">Hey there !</h2>
         <p data-aos="fade-up" data-aos-duration="1700">
@@ -104,7 +104,7 @@ if(!isset($_SESSION['uname'])){
       />
     </section>
 
-    <section data-scroll-section id="services" class="services">
+    <section  id="services" class="services">
       <a class="servlink" href="../webdev.html">
         <div data-aos="fade-up" data-aos-duration="1000" class="con">
           <img class="servlogos" src="img/webdev.svg" />
@@ -198,7 +198,7 @@ if(!isset($_SESSION['uname'])){
       </div>
     </section>
 
-    <section data-scroll-section id="Contact" class="Contact">
+    <section id="Contact" class="Contact">
       <div class="contactbox">
         <a class="contlinks" href="https://github.com/gokul-369">
           <div data-aos="fade-up" data-aos-duration="1000" class="c1">

@@ -106,7 +106,8 @@ section {
   color: rgb(255, 255, 255);
   text-shadow: 2px black;
 }
-.homecontent button,button.feedback  {
+.homecontent button,
+button.feedback {
   padding: 14px 20px;
   border-radius: 30px;
   border-style: none;
@@ -118,7 +119,7 @@ section {
   font-weight: 600;
   margin-top: 30px;
 }
-.homecontent button:hover{
+.homecontent button:hover {
   color: #1aa260;
   background: white;
   transition: all 0.4s ease;
@@ -156,7 +157,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 a {
   text-decoration: none;
@@ -245,7 +245,6 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-
 }
 a {
   text-decoration: none;
@@ -273,7 +272,7 @@ a {
   transform: scale(1.1, 1.1);
   transition: all 0.7s;
 }
-button.feedback:hover{
+button.feedback:hover {
   color: white;
   background: #2f2e41;
   transition: all 0.4s ease;
@@ -382,7 +381,7 @@ button.feedback:hover{
     background-position: center;
   }
   .homecontent h1 {
-    text-align: center ;
+    text-align: center;
     font-size: 30px;
     margin-top: -50%;
   }

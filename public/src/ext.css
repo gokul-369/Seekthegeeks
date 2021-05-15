@@ -70,26 +70,24 @@ button {
 h4 {
   margin-top: 6px;
 }
-@media screen and (max-width: 768px)
-{
-  p{
+@media screen and (max-width: 768px) {
+  p {
     max-width: 300px;
     font-size: 14px;
     text-align: left;
   }
-  body{
+  body {
     height: 180vh;
   }
-  .cards{
+  .cards {
     width: 300px;
     height: 350px;
     flex-direction: column;
   }
-  .content{
+  .content {
     width: 290px;
-    
   }
-  .btnrows{
+  .btnrows {
     margin-top: 8px;
   }
 }
