@@ -76,6 +76,7 @@ form h2 {
 .input-div.focus div h5 {
   top: -5px;
   font-size: 15px;
+  color: #32be8f;
 }
 .input-div.focus:after,
 .input-div.focus:before {
@@ -149,7 +150,6 @@ h3 {
   font-family: "Poppins", sans-serif;
   color: #333;
 }
-
 #frgtpwd:hover {
   color: #38d39f;
 }
@@ -207,12 +207,12 @@ h3 {
     display: none;
   }
 
-  .login-content {
+  .login-container {
     justify-content: center;
   }
   #eye,
   #eye2 {
     position: absolute;
-    left: 260px;
+    left: 250px;
   }
 }
